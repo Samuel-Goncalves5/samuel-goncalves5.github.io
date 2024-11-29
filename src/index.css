@@ -1,13 +1,146 @@
+/* Global styles */
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  font-family: 'Roboto', sans-serif; /* Police moderne */
+  color: #d4d4d4; /* Gris clair pour le texte */
+  background-color: #1a1a1a; /* Noir profond pour le fond */
+  line-height: 1.6;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+a {
+  text-decoration: none;
+  color: #6b52ae; /* Violet élégant */
+  font-weight: 500; /* Moins gras pour rester subtil */
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+a:hover {
+  color: #937dc2; /* Violet clair au survol */
+  transform: scale(1.05); /* Légère mise en avant */
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700; /* Titres gras pour attirer l'attention */
+  color: #d4d4d4;
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #6b52ae; /* Violet principal pour les titres */
+}
+
+h2 {
+  font-size: 2rem;
+  color: #937dc2; /* Violet clair pour les sous-titres */
+}
+
+h3 {
+  font-size: 1.5rem;
+  color: #a297b7;
+  margin-bottom: 0;
+  text-decoration: underline;
+}
+
+/* Buttons */
+button {
+  font-size: 1rem;
+  padding: 10px 20px;
+  border: 2px solid #6b52ae; /* Violet principal pour les boutons */
+  background-color: transparent;
+  color: #d4d4d4;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #6b52ae; /* Fond violet au survol */
+  color: #1a1a1a; /* Texte noir pour contraste */
+  transform: scale(1.1);
+}
+
+button:focus {
+  outline: none;
+  box-shadow: 0 0 5px #6b52ae; /* Lueur subtile */
+}
+
+/* Containers */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Cards */
+.card {
+  background-color: #252525; /* Fond légèrement plus clair que le corps */
+  border: 1px solid #3a3a3a;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 15px 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.8);
+}
+
+/* Forms */
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #3a3a3a;
+  border-radius: 5px;
+  background-color: #252525;
+  color: #d4d4d4;
+}
+
+form input:focus, form textarea:focus {
+  border-color: #6b52ae;
+  outline: none;
+  box-shadow: 0 0 5px #6b52ae;
+}
+
+form button {
+  width: 100%;
+  padding: 10px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px 0;
+  background-color: #141414;
+  color: #d4d4d4;
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: #6b52ae;
+}
+
+footer a:hover {
+  color: #937dc2;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    width: 95%;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
 }

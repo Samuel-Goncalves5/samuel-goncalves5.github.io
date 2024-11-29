@@ -1,6 +1,7 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 
+/*
 const Contact = () => {
   const { t } = useTranslation();
 
@@ -17,5 +18,10 @@ const Contact = () => {
     </div>
   );
 };
+*/
+
+const Contact = () => {
+  return <p style={{display: "flex", alignItems: "center", justifyContent: "center"}}>🛠</p>
+}
 
 export default Contact;

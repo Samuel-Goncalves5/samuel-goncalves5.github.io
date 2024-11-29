@@ -72,3 +72,22 @@ nav {
   body {
     padding-top: 70px;
   }
+
+  @media (max-width: 768px) {
+    .nav-list {
+      flex-direction: column;
+    }
+
+    .pages-list {
+      flex-direction: column;
+      gap: 0px;
+    }
+
+    nav {
+      position: relative;
+    }
+  
+    body {
+      padding-top: 0px;
+    }
+  }

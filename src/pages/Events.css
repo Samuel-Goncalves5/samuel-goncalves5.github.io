@@ -1,4 +1,3 @@
-/* Container principal */
 .events-container {
   max-width: 1200px;
   margin: 0 auto;
@@ -13,7 +12,6 @@ h2 {
   margin-bottom: 30px;
 }
 
-/* Légende des catégories */
 .legend {
   display: flex;
   flex-wrap: wrap;
@@ -26,6 +24,18 @@ h2 {
   display: flex;
   align-items: center;
   gap: 10px;
+  padding: 3px 5px;
+  margin: 0 3px;
+  border-radius: 20px;
+}
+
+.legend-item.active {
+  background-color: #6b52ae;
+  transform: scale(1.1);
+}
+
+.legend-item:hover {
+  transform: scale(1.2);
 }
 
 .legend-color {
@@ -40,7 +50,6 @@ h2 {
   color: #d4d4d4;
 }
 
-/* Grille des post-it */
 .post-it-grid {
   display: flex;
   flex-wrap: wrap;
@@ -48,7 +57,6 @@ h2 {
   justify-content: center;
 }
 
-/* Post-it individuel */
 .post-it {
   color: #333;
   width: 200px;
@@ -69,13 +77,11 @@ h2 {
   transform: rotate(-1deg);
 }
 
-/* Animation au survol */
 .post-it:hover {
   transform: rotate(0deg) scale(1.05);
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.6);
 }
 
-/* Texte du post-it */
 .post-it-date {
   font-weight: bold;
   color: #6b52ae;
@@ -89,7 +95,6 @@ h2 {
   color: #333;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
   .post-it {
     width: 150px;

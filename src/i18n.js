@@ -120,7 +120,57 @@ const resources = {
         ],
       },
       events: {
-        name: "Key events"
+        name: "Key events",
+        types: {
+          research: {
+            name: "Research",
+            color: "#fdfd96",
+          },
+          report: {
+            name: "Report",
+            color: "#ffb6c1",
+          },
+          conference: {
+            name: "Conference",
+            color: "#87cefa",
+          },
+          internship: {
+            name: "Internship",
+            color: "#98fb98",
+          }
+        },
+        list: [
+          {
+            date: "2024",
+            description: "Website under construction...",
+            type: "research"
+          },
+          {
+            date: "2023",
+            description: "Website under construction...",
+            type: "internship"
+          },
+          {
+            date: "2023",
+            description: "Website under construction...",
+            type: "report"
+          },
+          {
+            date: "2022",
+            description: "Website under construction...",
+            type: "internship"
+          },
+          {
+            date: "2022",
+            description: "Website under construction...",
+            type: "conference"
+          },
+          {
+            date: "2021",
+            description: "Website under construction...",
+            type: "conference"
+          },
+        ]
       }
     },
   },
@@ -241,7 +291,57 @@ const resources = {
         ],
       },
       events: {
-        name: "Événements marquants"
+        name: "Événements marquants",
+        types: {
+          research: {
+            name: "Research",
+            color: "#fdfd96",
+          },
+          report: {
+            name: "Report",
+            color: "#ffb6c1",
+          },
+          conference: {
+            name: "Conference",
+            color: "#87cefa",
+          },
+          internship: {
+            name: "Internship",
+            color: "#98fb98",
+          }
+        },
+        list: [
+          {
+            date: "2024",
+            description: "Site en cours de création...",
+            type: "research"
+          },
+          {
+            date: "2023",
+            description: "Site en cours de création...",
+            type: "internship"
+          },
+          {
+            date: "2023",
+            description: "Site en cours de création...",
+            type: "report"
+          },
+          {
+            date: "2022",
+            description: "Site en cours de création...",
+            type: "internship"
+          },
+          {
+            date: "2022",
+            description: "Site en cours de création...",
+            type: "conference"
+          },
+          {
+            date: "2021",
+            description: "Site en cours de création...",
+            type: "conference"
+          },
+        ]
       }
     },
   },

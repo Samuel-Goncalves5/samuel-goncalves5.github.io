@@ -1,56 +1,41 @@
-import React from "react";
+import React, {useState} from "react";
 import { useTranslation } from "react-i18next";
 import "./Events.css";
 
-// Liste des événements avec type
-const events = [
-  { date: "Janvier 2024", description: "Début de ma recherche sur les archives numériques.", type: "Recherche" },
-  { date: "Septembre 2023", description: "Collaboration avec le CNRS pour un rapport technique.", type: "Rapport" },
-  { date: "Février 2022", description: "Stage à l'étranger en Finlande.", type: "Stage" },
-  { date: "Janvier 2024", description: "Début de ma recherche sur les archives numériques.", type: "Recherche" },
-  { date: "Septembre 2023", description: "Collaboration avec le CNRS pour un rapport technique.", type: "Rapport" },
-  { date: "Mai 2023", description: "Participation à une conférence sur la vision par ordinateur.", type: "Conférence" },
-  { date: "Janvier 2024", description: "Début de ma recherche sur les archives numériques.", type: "Recherche" },
-  { date: "Septembre 2023", description: "Collaboration avec le CNRS pour un rapport technique.", type: "Rapport" },
-  { date: "Mai 2023", description: "Participation à une conférence sur la vision par ordinateur.", type: "Conférence" },
-  { date: "Février 2022", description: "Stage à l'étranger en Finlande.", type: "Stage" },
-  { date: "Janvier 2024", description: "Début de ma recherche sur les archives numériques.", type: "Recherche" },
-  { date: "Septembre 2023", description: "Collaboration avec le CNRS pour un rapport technique.", type: "Rapport" },
-  { date: "Mai 2023", description: "Participation à une conférence sur la vision par ordinateur.", type: "Conférence" },
-  { date: "Février 2022", description: "Stage à l'étranger en Finlande.", type: "Stage" },
-];
-
-// Couleurs associées aux types
-const typeColors = {
-  Recherche: "#fdfd96", // Jaune
-  Rapport: "#ffb6c1", // Rose
-  Conférence: "#87cefa", // Bleu clair
-  Stage: "#98fb98", // Vert clair
-};
-
 const Events = () => {
-  const { t } = useTranslation();
+  const [selectedType, setSelectedType] = useState(null);
+  const handleTypeClick = (type) => {
+    setSelectedType((prevType) => (prevType === type ? null : type));
+  };
 
-  /*
+  const { t } = useTranslation();
+  const types = t("events.types", { returnObjects: true })
+
   return (
     <div className="events-container">
       <h2>{t("events.name")}</h2>
 
       <div className="legend">
-        {Object.keys(typeColors).map((type) => (
-          <div key={type} className="legend-item">
-            <span className="legend-color" style={{ backgroundColor: typeColors[type] }}></span>
-            <span className="legend-label">{type}</span>
+        {Object.keys(types).map((type) => (
+          <div
+            key={types[type].name}
+            className={`legend-item ${selectedType === types[type].name ? "active" : ""}`}
+            onClick={() => handleTypeClick(type)}
+          >
+            <span className="legend-color" style={{ backgroundColor: types[type].color }}></span>
+            <span className="legend-label">{types[type].name}</span>
           </div>
         ))}
       </div>
 
       <div className="post-it-grid">
-        {events.map((event, index) => (
+        {t("events.list", { returnObjects: true })
+        .filter((event) => !selectedType || event.type === selectedType)
+        .map((event, index) => (
           <div
             className="post-it"
             key={index}
-            style={{ backgroundColor: typeColors[event.type] }}
+            style={{ backgroundColor: types[event.type].color }}
           >
             <p className="post-it-date">{event.date}</p>
             <p className="post-it-description">{event.description}</p>
@@ -58,9 +43,7 @@ const Events = () => {
         ))}
       </div>
     </div>
-  );*/
-
-  return <h2>🛠</h2>
+  );
 };
 
 export default Events;

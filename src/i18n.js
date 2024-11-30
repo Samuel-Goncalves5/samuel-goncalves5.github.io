@@ -189,7 +189,7 @@ const resources = {
         summary_text_1:
           "Passionné de mathématiques, d'informatique et de recherche. Étudiant-chercheur en double-diplôme à EPITA (double majeure Traitement d'image et Recherche) et Sorbonne Université (Traitement d'Image). Equipe MNSHS (Méthodes Numériques pour les Sciences Humaines et Sociales) dans le laboratoire de recherche de l'EPITA.",
         summary_text_2:
-          "Mon objectif principal est de contribuer à mettre l'informatique, et en particulier l'intelligence artificielle, au service des sciences historiques. Pour y parvenir, je travaille dans le monde de la recherche, où je rencontre aussi bien des profils orientés informatique qu'orientés histoire. Dès mes premiers pas dans le domaine de la recherche, au sein de l'EPITA, j'ai été attiré par la liaison entre ces deux mondes, et j'ai donc rejoins une équipe de recherche travaillant sur cette interaction.",
+          "Mon objectif principal est de contribuer à mettre l'informatique, et en particulier l'intelligence artificielle, au service des sciences historiques. Pour y parvenir, je travaille dans le monde de la recherche, où je rencontre aussi bien des profils orientés informatique qu'orientés histoire. Dès mes premiers pas dans le domaine de la recherche, au sein de l'EPITA, j'ai été attiré par la liaison entre ces deux mondes, et j'ai donc rejoint une équipe de recherche travaillant sur cette interaction.",
           profiles: "Mes profils",
           contact: "Me contacter",
       },

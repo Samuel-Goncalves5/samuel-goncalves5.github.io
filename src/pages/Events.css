@@ -1,0 +1,103 @@
+/* Container principal */
+.events-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  color: #d4d4d4;
+}
+
+h2 {
+  font-size: 2.5rem;
+  color: #6b52ae;
+  margin-bottom: 30px;
+}
+
+/* Légende des catégories */
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.legend-color {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%; /* Cercle pour représenter la couleur */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.legend-label {
+  font-size: 1rem;
+  color: #d4d4d4;
+}
+
+/* Grille des post-it */
+.post-it-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Post-it individuel */
+.post-it {
+  color: #333;
+  width: 200px;
+  min-height: 150px;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+  transform: rotate(-3deg);
+  position: relative;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.post-it:nth-child(2n) {
+  transform: rotate(2deg);
+}
+
+.post-it:nth-child(3n) {
+  transform: rotate(-1deg);
+}
+
+/* Animation au survol */
+.post-it:hover {
+  transform: rotate(0deg) scale(1.05);
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.6);
+}
+
+/* Texte du post-it */
+.post-it-date {
+  font-weight: bold;
+  color: #6b52ae;
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+.post-it-description {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .post-it {
+    width: 150px;
+    min-height: 120px;
+    font-size: 0.9rem;
+  }
+
+  .post-it-date {
+    font-size: 1rem;
+  }
+}

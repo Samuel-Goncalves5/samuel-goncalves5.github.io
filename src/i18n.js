@@ -7,77 +7,20 @@ const resources = {
     translation: {
       navbar: {
         presentation: "Presentation",
-        experiences: "Experiences",
         publications: "Publications",
-        projects: "Projects",
-        contact: "Contact",
+        experiences: "Experiences",
+        events: "Events"
       },
       presentation: {
         title: "Samuel Gonçalves",
-        subtitle: "Research Student at Sorbonne University and EPITA (Computer engineering school)",
-        description:
-          "Maths and computer science enthusiast, young researcher. Great interest in politics, philosophy and History.",
+        subtitle: "Research Student at Sorbonne University and EPITA",
         summary_title: "Summary",
-        summary_text:
+        summary_text_1:
           "Passionate about mathematics, computer science and research. Double-degree student-researcher at EPITA (double major in Image Processing and Research) and Sorbonne University (Image Processing). DMHSS (Digital Methods for Humanities and Social Sciences) team in the EPITA research laboratory.",
-        skills: {
-          title: "Key Skills",
-          fields: {
-            name: "Fields",
-            list: [
-              ["Computer vision", ""],
-              ["Neural networks", ""],
-              ["CNN", ""],
-              ["Pattern recognition", ""],
-              ["Data processing", ""],
-            ]
-          },
-          computer_lang: {
-            name: "Computer languages",
-            list: [
-              ["Python", "(Pytorch, Scikit-Learn)"],
-              ["Shell-Bash", "(GNU/Linux)"],
-              ["C++", ""],
-              ["C", ""],
-              ["Java", ""],
-              ["Lisp", ""],
-              ["OcamL", ""],
-              ["C#", ""],
-            ]
-          },
-          lang: {
-            name: "Languages",
-            list: [
-              ["French", "- Mother tongue"],
-              ["English", "- TOEIC 920"],
-              ["Spanish", "- Notions"],
-            ]
-          },
-        },
-        also: {
-          name: "And also...",
-          hobbies: {
-            name: "Hobbies",
-            list: [
-              ["Aikido", ""],
-              ["Role-playing", "- associations ANTRE and Dés'n'Dés"]
-            ]
-          },
-          interests: {
-            name: "Other interests",
-            list: [
-              ["History", ""],
-              ["Politics", ""],
-              ["Music", "(classical and metal)"],
-              ["Video games", ""]
-            ]
-          },
-        },
-        contact_title: "Contact",
-        email: "Email (EPITA)",
-        email2: "Email (Sorbonne)",
-        linkedin: "LinkedIn",
-        github: "GitHub",
+        summary_text_2:
+          "My main goal is to make computer science, and in particular artificial intelligence, available to the historical sciences. To achieve this, I work in the research community, where I meet people with both computer science and history backgrounds. Right from my first steps in the research field, at EPITA, I was attracted by the link between these two worlds, and thus joined a research team working on this interaction.",
+        profiles: "Profiles",
+        contact: "Contact",
       },
       experiences: {
         professional_name: "Professional experience",
@@ -141,89 +84,64 @@ const resources = {
           },
         ],
       },
-      contact: {
-        title: "Contact Me",
-        email: "Email",
-        message: "Message",
-        send: "Send",
+      publications: {
+        name: "Publications",
+        more_article: "Read the article",
+        more_techrep: "Read the report",
+        list: [
+          {
+            year: 2024,
+            list: [
+              {
+                title: "Topic modeling methods comparison against LLM",
+                authors: "Samuel Gonçalves, Fabrice Boissier",
+                date: "June 2024",
+                journal: "LRE: Technical report",
+                description: "The primary objective of this project is to assess how various data pre-processing techniques impact the relevance and accuracy of the topic modeling results. Specifically, the study focuses on the effects of punctuation cleaning, lemmatization and words to concepts transformation. Additionally, the project aims to evaluate how different types of prompts influence the performance and output of large language models.",
+                link: "/pdfs/202406-techrep-goncalves.pdf",
+                type: "techrep",
+              },
+            ]
+          },
+          {
+            year: 2023,
+            list: [
+              {
+                title: "Automatic language processing applied to the militarization of children's literature from 1860 to 1919",
+                authors: "Samuel Gonçalves, Fabrice Boissier, Marie Puren",
+                date: "June 2023",
+                journal: "LRE: Technical report",
+                description: "The project's objective is to extract the vocabulary and lexical field that indicate the strength of the militarization trend from the selected texts. The report describes the development of tools for document retrieval, tokenization, lemmatization, application of the CREA method, and visualization of results.",
+                link: "/pdfs/202306-techrep-goncalves.pdf",
+                type: "techrep",
+              }
+            ]
+          }
+        ],
       },
+      events: {
+        name: "Key events"
+      }
     },
   },
   fr: {
     translation: {
       navbar: {
         presentation: "Présentation",
-        experiences: "Expériences",
         publications: "Publications",
-        projects: "Projets",
-        contact: "Contact",
+        experiences: "Expériences",
+        events: "Événements"
       },
       presentation: {
         title: "Samuel Gonçalves",
         subtitle: "Étudiant-Chercheur à Sorbonne Université et EPITA",
-        description:
-          "Passionné de mathématiques, d'informatique, chercheur en herbe. Grand intérêt pour la politique, la philosophie et l'Histoire.",
         summary_title: "Résumé",
-        summary_text:
+        summary_text_1:
           "Passionné de mathématiques, d'informatique et de recherche. Étudiant-chercheur en double-diplôme à EPITA (double majeure Traitement d'image et Recherche) et Sorbonne Université (Traitement d'Image). Equipe MNSHS (Méthodes Numériques pour les Sciences Humaines et Sociales) dans le laboratoire de recherche de l'EPITA.",
-        skills: {
-          title: "Compétences principales",
-          fields: {
-            name: "Domaines",
-            list: [
-              ["Vision par ordinateur", ""],
-              ["Réseaux de neurones", ""],
-              ["CNN", ""],
-              ["Reconnaissance de formes", ""],
-              ["Traitement de données", ""],
-            ]
-          },
-          computer_lang: {
-            name: "Langages informatiques",
-            list: [
-              ["Python", "(Pytorch, Scikit-Learn)"],
-              ["Shell-Bash", "(GNU/Linux)"],
-              ["C++", ""],
-              ["C", ""],
-              ["Java", ""],
-              ["Lisp", ""],
-              ["OcamL", ""],
-              ["C#", ""],
-            ]
-          },
-          lang: {
-            name: "Langues",
-            list: [
-              ["Français", "- Langue maternelle"],
-              ["Anglais", "- TOEIC 920"],
-              ["Espagnol", "- Notions"],
-            ]
-          },
-        },
-        also: {
-          name: "Et aussi...",
-          hobbies: {
-            name: "Activités",
-            list: [
-              ["Aikido", ""],
-              ["Jeu de rôle", "- associations ANTRE et Dés'n'Dés"]
-            ]
-          },
-          interests: {
-            name: "Autres intérêts",
-            list: [
-              ["Histoire", ""],
-              ["Politique", ""],
-              ["Musique", "(classique et métal)"],
-              ["Jeu-vidéo", ""]
-            ]
-          },
-        },
-        contact_title: "Contact",
-        email: "Email (EPITA)",
-        email2: "Email (Sorbonne)",
-        linkedin: "LinkedIn",
-        github: "GitHub",
+        summary_text_2:
+          "Mon objectif principal est de contribuer à mettre l'informatique, et en particulier l'intelligence artificielle, au service des sciences historiques. Pour y parvenir, je travaille dans le monde de la recherche, où je rencontre aussi bien des profils orientés informatique qu'orientés histoire. Dès mes premiers pas dans le domaine de la recherche, au sein de l'EPITA, j'ai été attiré par la liaison entre ces deux mondes, et j'ai donc rejoins une équipe de recherche travaillant sur cette interaction.",
+          profiles: "Mes profils",
+          contact: "Me contacter",
       },
       experiences: {
         professional_name: "Expérience professionnelle",
@@ -287,12 +205,44 @@ const resources = {
           },
         ],
       },
-      contact: {
-        title: "Contactez-moi",
-        email: "Email",
-        message: "Message",
-        send: "Envoyer",
+      publications: {
+        name: "Publications",
+        more_article: "Lire l'article",
+        more_techrep: "Lire le rapport",
+        list: [
+          {
+            year: 2024,
+            list: [
+              {
+                title: "Comparaison entre les méthodes de modélisation de sujets et les LLM",
+                authors: "Samuel Gonçalves, Fabrice Boissier",
+                date: "Juin 2024",
+                journal: "LRE: Rapport Technique",
+                description: "L'objectif principal de ce projet est d'évaluer l'impact des différentes techniques de prétraitement des données sur la pertinence et la précision des résultats de la modélisation thématique. Plus précisément, l'étude se concentre sur les effets du nettoyage de la ponctuation, de la lemmatisation et de la transformation des mots en concepts. En outre, le projet vise à évaluer comment différents types d'entrées utilisateur influencent les performances et les résultats des grands modèles de langage.",
+                link: "/pdfs/202406-techrep-goncalves.pdf",
+                type: "techrep",
+              },
+            ]
+          },
+          {
+            year: 2023,
+            list: [
+              {
+                title: "Traitement automatique du langage appliqué à la militarisation de la littérature jeunesse de 1860 à 1919",
+                authors: "Samuel Gonçalves, Fabrice Boissier, Marie Puren",
+                date: "Juin 2023",
+                journal: "LRE: Rapport Technique",
+                description: "L'objectif du projet est d'extraire des textes sélectionnés le vocabulaire et le champ lexical qui indiquent la force de la tendance à la militarisation. Le rapport décrit le développement d'outils pour la recherche de documents, la tokenisation, la lemmatisation, l'application de la méthode CREA et la visualisation des résultats.",
+                link: "/pdfs/202306-techrep-goncalves.pdf",
+                type: "techrep",
+              },
+            ]
+          },
+        ],
       },
+      events: {
+        name: "Événements marquants"
+      }
     },
   },
 };

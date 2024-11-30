@@ -44,13 +44,17 @@
     width: 100%;
     max-width: 800px;
   }
-  
+
   .section h2 {
     font-size: 2rem;
     color: #937dc2;
     margin-bottom: 15px;
     border-bottom: 2px solid #6b52ae;
     padding-bottom: 5px;
+  }
+
+  .section p {
+    text-align: justify;
   }
 
   ul {
@@ -69,21 +73,35 @@
     color: #6b52ae;
   }
 
-  .contact-links {
-    display: flex;
-    gap: 20px;
+  /* Buttons */
+  .button-list {
+    display:flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    text-align: center;
     justify-content: center;
   }
-  
-  .contact-links a {
-    text-decoration: none;
-    color: #6b52ae;
-    font-size: 1.2rem;
-    transition: color 0.3s ease;
+
+  .button-list a {
+    font-size: 1rem;
+    padding: 10px 20px;
+    border: 2px solid #6b52ae; /* Violet principal pour les boutons */
+    background-color: transparent;
+    color: #d4d4d4;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
   }
-  
-  .contact-links a:hover {
-    color: #937dc2;
+
+  .button-list a:hover {
+    background-color: #6b52ae; /* Fond violet au survol */
+    color: #1a1a1a; /* Texte noir pour contraste */
+    transform: scale(1.1);
+  }
+
+  .button-list a:focus {
+    outline: none;
+    box-shadow: 0 0 5px #6b52ae; /* Lueur subtile */
   }
 
   @media (max-width: 768px) {

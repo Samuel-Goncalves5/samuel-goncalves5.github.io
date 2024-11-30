@@ -4,8 +4,7 @@ import Navbar from "./components/Navbar";
 import Presentation from "./pages/Presentation";
 import Experiences from "./pages/Experiences";
 import Publications from "./pages/Publications";
-import Projects from "./pages/Projects";
-import Contact from "./pages/Contact";
+import Events from "./pages/Events";
 
 const App = () => {
   return (
@@ -15,8 +14,7 @@ const App = () => {
         <Route path="/" element={<Presentation />} />
         <Route path="/experiences" element={<Experiences />} />
         <Route path="/publications" element={<Publications />} />
-        <Route path="/projets" element={<Projects />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/events" element={<Events />} />
       </Routes>
     </Router>
   );

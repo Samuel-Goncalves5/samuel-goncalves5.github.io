@@ -80,4 +80,8 @@
     .timeline-item {
       margin-left: 0;
     }
+
+    .timeline-item:before {
+      left: -28px;
+    }
   }  

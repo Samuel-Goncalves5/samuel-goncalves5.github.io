@@ -26,6 +26,18 @@ const resources = {
         professional_name: "Professional experience",
         professional: [
           {
+            title: "\"Identification of image circulation in large collections of historical photographs\"",
+            company: "ANR HighVision Project / LIPADE Laboratory / Paris Cité University",
+            date: "2025 (6 mois)",
+            description: "Multimodality (Image and text processing) applied to historical photographs (Forbin Fund among others), Computer Vision, AI, Research, Use of the Jean Zay supercomputer. Collaboration with the ECHELLES and LIP6 laboratories, the French National Archives, the Historical Service of Defense (French Ministry of the Armed Forces), the Historical Library of the City of Paris and the IMC Toronto.",
+          },
+          {
+            title: "\"Exploration et analyse de jeux de données patrimoniales visuelles et multimodales\"",
+            company: "Hackathon PictorIA & BnF Datalab / Collaboration avec le projet ANR HighVision",
+            date: "2024 (2 jours)",
+            description: "Travail sur des images de la Commune, Utilisation des outils ArkIndex (Teklia), AIKON, Panoptic.",
+          },
+          {
             title: "Student researcher",
             company: "DMHSS team (Digital Methods for Humanities and Social Sciences) in the EPITA Research Laboratory (LRE)",
             date: "2023 - 2025",
@@ -140,49 +152,88 @@ const resources = {
             name: "Research",
             color: "#fdfd96",
           },
-          report: {
-            name: "Report",
+          highschool: {
+            name: "Highschool",
             color: "#ffb6c1",
           },
-          conference: {
-            name: "Conference",
+          postBac: {
+            name: "Post bac",
             color: "#87cefa",
           },
-          internship: {
-            name: "Internship",
+          international: {
+            name: "International",
             color: "#98fb98",
+          },
+          other: {
+            name: "Other",
+            color: "#ffffff",
           }
         },
         list: [
           {
-            date: "2024",
-            description: "Website under construction...",
+            date: "27/11/2024",
+            description: "Visit to the National Archives of France",
+            type: "other"
+          },
+          {
+            date: "26/11/2024",
+            description: "Second Lightning Talk of my third year",
             type: "research"
           },
           {
-            date: "2023",
-            description: "Website under construction...",
-            type: "internship"
+            date: "25/11/2024",
+            description: "Accepted to participate in the ANR HighVision project",
+            type: "research"
           },
           {
-            date: "2023",
-            description: "Website under construction...",
-            type: "report"
+            date: "23/11/2024",
+            description: "Ambassador for EPITA at my high school",
+            type: "highschool"
           },
           {
-            date: "2022",
-            description: "Website under construction...",
-            type: "internship"
+            date: "22/10/2024",
+            description: "First Lightning Talk of my third year",
+            type: "research"
           },
           {
-            date: "2022",
-            description: "Website under construction...",
-            type: "conference"
+            date: "11/2023",
+            description: "Ambassador for EPITA at my high school",
+            type: "highschool"
           },
           {
-            date: "2021",
-            description: "Website under construction...",
-            type: "conference"
+            date: "11/2022",
+            description: "Ambassador for EPITA at my high school",
+            type: "highschool"
+          },
+          {
+            date: "02/01/2022",
+            description: "Departure for Finland",
+            type: "international"
+          },
+          {
+            date: "11/2021",
+            description: "Ambassador for EPITA at my high school",
+            type: "highschool"
+          },
+          {
+            date: "11/2020",
+            description: "Ambassador for EPITA at my high school",
+            type: "highschool"
+          },
+          {
+            date: "14/09/2020",
+            description: "First year at EPITA",
+            type: "postBac"
+          },
+          {
+            date: "29/04/2020",
+            description: "Highly ranked, accepted at EPITA",
+            type: "postBac"
+          },
+          {
+            date: "11/01/2020",
+            description: "Discovery of EPITA by their ambassadors in my high school",
+            type: "highschool"
           },
         ]
       }
@@ -210,6 +261,18 @@ const resources = {
       experiences: {
         professional_name: "Expérience professionnelle",
         professional: [
+          {
+            title: "\"Identification de circulation d'images dans de larges collections de photographies historiques\"",
+            company: "Projet ANR HighVision / Laboratoire LIPADE / Université Paris Cité",
+            date: "2025 (6 mois)",
+            description: "Multimodalité (Traitement d'image et de textes) appliquée à des photographies historiques (Fonds Forbin entre autres), Vision par ordinateur, IA, Recherche, Utilisation du supercalculateur Jean Zay. Collaboration avec les laboratoires ECHELLES et LIP6, les Archives Nationales, le Service Historique de la Défense (Ministère des Armées), la Bibliothèque Historique de la Ville de Paris et l'IMC Toronto.",
+          },
+          {
+            title: "\"Exploration et analyse de jeux de données patrimoniales visuelles et multimodales\"",
+            company: "Hackathon PictorIA & BnF Datalab / Collaboration avec le projet ANR HighVision",
+            date: "2024 (2 jours)",
+            description: "Travail sur des images de la Commune, Utilisation des outils ArkIndex (Teklia), AIKON, Panoptic.",
+          },
           {
             title: "Étudiant-chercheur",
             company: "Équipe MNSHS (Méthodes Numériques pour les Sciences Humaines et Sociales) des Laboratoire de Recherche de l'EPITA (LRE)",

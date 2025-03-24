@@ -90,6 +90,20 @@ const resources = {
         more_techrep: "Read the report",
         list: [
           {
+            year: 2025,
+            list: [
+              {
+                title: "Topic modeling methods comparison against LLM",
+                authors: "Samuel Gonçalves, Fabrice Boissier",
+                date: "January 2025",
+                journal: "LRE: Technical report",
+                description: "The primary objective of this project is to assess how various data pre-processing techniques impact the relevance and accuracy of the topic modeling results. Specifically, the study focuses on the effects of punctuation cleaning, lemmatization and words to concepts transformation. Additionally, the project aims to evaluate how different types of prompts influence the performance and output of large language models.",
+                link: "/pdfs/202501-techrep-goncalves.pdf",
+                type: "techrep",
+              },
+            ]
+          },
+          {
             year: 2024,
             list: [
               {
@@ -261,6 +275,20 @@ const resources = {
         more_techrep: "Lire le rapport",
         list: [
           {
+            year: 2025,
+            list: [
+              {
+                title: "Comparaison entre les méthodes de modélisation de sujets et les LLM",
+                authors: "Samuel Gonçalves, Fabrice Boissier",
+                date: "Janvier 2025",
+                journal: "LRE: Rapport Technique",
+                description: "L'objectif principal de ce projet est d'évaluer l'impact des différentes techniques de prétraitement des données sur la pertinence et la précision des résultats de la modélisation thématique. Plus précisément, l'étude se concentre sur les effets du nettoyage de la ponctuation, de la lemmatisation et de la transformation des mots en concepts. En outre, le projet vise à évaluer comment différents types d'entrées utilisateur influencent les performances et les résultats des grands modèles de langage.",
+                link: "/pdfs/202501-techrep-goncalves.pdf",
+                type: "techrep",
+              },
+            ]
+          },
+          {
             year: 2024,
             list: [
               {
@@ -294,52 +322,91 @@ const resources = {
         name: "Événements marquants",
         types: {
           research: {
-            name: "Research",
+            name: "Recherche",
             color: "#fdfd96",
           },
-          report: {
-            name: "Report",
+          highschool: {
+            name: "Lycée",
             color: "#ffb6c1",
           },
-          conference: {
-            name: "Conference",
+          postBac: {
+            name: "Post bac",
             color: "#87cefa",
           },
-          internship: {
-            name: "Internship",
+          international: {
+            name: "International",
             color: "#98fb98",
+          },
+          other: {
+            name: "Divers",
+            color: "#ffffff",
           }
         },
         list: [
           {
-            date: "2024",
-            description: "Site en cours de création...",
+            date: "27/11/2024",
+            description: "Visite des Archives nationales de France",
+            type: "other"
+          },
+          {
+            date: "26/11/2024",
+            description: "Lightning Talk de 3ème année n°2",
             type: "research"
           },
           {
-            date: "2023",
-            description: "Site en cours de création...",
-            type: "internship"
+            date: "25/11/2024",
+            description: "Accepté pour participer au projet ANR HighVision",
+            type: "research"
           },
           {
-            date: "2023",
-            description: "Site en cours de création...",
-            type: "report"
+            date: "23/11/2024",
+            description: "Salon des ambassadeurs, représentant EPITA",
+            type: "highschool"
           },
           {
-            date: "2022",
-            description: "Site en cours de création...",
-            type: "internship"
+            date: "22/10/2024",
+            description: "Lightning Talk de 3ème année n°1",
+            type: "research"
           },
           {
-            date: "2022",
-            description: "Site en cours de création...",
-            type: "conference"
+            date: "11/2023",
+            description: "Salon des ambassadeurs, représentant EPITA",
+            type: "highschool"
           },
           {
-            date: "2021",
-            description: "Site en cours de création...",
-            type: "conference"
+            date: "11/2022",
+            description: "Salon des ambassadeurs, représentant EPITA",
+            type: "highschool"
+          },
+          {
+            date: "02/01/2022",
+            description: "Départ pour la Finlande",
+            type: "international"
+          },
+          {
+            date: "11/2021",
+            description: "Salon des ambassadeurs, représentant EPITA",
+            type: "highschool"
+          },
+          {
+            date: "11/2020",
+            description: "Salon des ambassadeurs, représentant EPITA",
+            type: "highschool"
+          },
+          {
+            date: "14/09/2020",
+            description: "Rentrée à l'EPITA",
+            type: "postBac"
+          },
+          {
+            date: "29/04/2020",
+            description: "Grand classé, accepté à l'EPITA",
+            type: "postBac"
+          },
+          {
+            date: "11/01/2020",
+            description: "Salon des ambassadeurs où je découvre EPITA",
+            type: "highschool"
           },
         ]
       }

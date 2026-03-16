@@ -1,4 +1,4 @@
-.publications-container {
+.section {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
@@ -11,16 +11,21 @@
     color: #6b52ae;
     margin-bottom: 20px;
   }
+
+  .year {
+    text-align: center;
+  }
   
   .publications-list {
     display: flex;
     flex-direction: column;
-    gap: 20px;
   }
   
   .publication-card {
+    display: block;
     background-color: #252525;
     padding: 15px 20px;
+    margin-bottom: 15px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -34,6 +39,7 @@
   .publication-card h3 {
     font-size: 1.5rem;
     color: #a066ff;
+    margin-top: 0;
     margin-bottom: 10px;
   }
   
@@ -66,4 +72,3 @@
   .publication-card .read-more:hover {
     color: #a066ff;
   }
-  

@@ -1,6 +1,6 @@
 {
   "short_name": "Samuel Gonçalves",
-  "name": "Samuel Gonçalves - Chercheur",
+  "name": "Samuel Gonçalves",
   "icons": [
     {
       "src": "profile_picture.png", 
@@ -16,6 +16,6 @@
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#6b52ae", 
-  "background_color": "#1a1a1a", 
+  "background_color": "#2e2e2e", 
   "description": "Site personnel de Samuel Gonçalves"
 }

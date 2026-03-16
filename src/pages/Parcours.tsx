@@ -1,4 +1,3 @@
-import React from "react";
 import "./Parcours.css";
 
 type ParcoursItem = {
